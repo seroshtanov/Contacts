@@ -16,7 +16,7 @@ class ContactListPresenter {
 
 extension ContactListPresenter: TableViewOutput {
     func viewLoaded() {
-        self.view.update(title: "Контакты")
+        self.view.update(title: Strings.Titles.contacts)
         self.view.registerCell(ContactInfoCell.self)
         self.view.spinnerStart()
         self.model.loadContacts()

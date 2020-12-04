@@ -89,7 +89,7 @@ extension TableViewController : TableViewInput {
     
     func show(message: String?) {
         let alert = UIAlertController.init(title: nil, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction.init(title: "OK", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction.init(title: Strings.Buttons.ok, style: .cancel, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
     
